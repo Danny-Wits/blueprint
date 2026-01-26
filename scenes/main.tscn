@@ -28,11 +28,11 @@ text = "Add state"
 
 [node name="EditorRoot" type="Node2D" parent="."]
 
-[node name="Camera2D" type="Camera2D" parent="EditorRoot"]
-position = Vector2(581, 326)
-script = ExtResource("1_0wfyh")
-
 [node name="Canvas" type="Node2D" parent="EditorRoot"]
-position = Vector2(579, 343)
+position = Vector2(583, 332)
+
+[node name="Camera" type="Camera2D" parent="EditorRoot" groups=["camera"]]
+position = Vector2(581, 328)
+script = ExtResource("1_0wfyh")
 
 [connection signal="pressed" from="CanvasLayer/UI/AddStateButton" to="." method="_on_add_state_button_pressed"]
